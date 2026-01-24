@@ -1,0 +1,31 @@
+/*@ext:shalldie.background для работы кода нужно скачать это расширение. без него не будет работать. затем в его настройках json вставить этот код*/
+
+{
+  "background.fullscreen": {
+    "images": [
+      "https://images.steamusercontent.com/ugc/1856052392796131961/EAE26E87A562843DA06FCC87B5F5BE723974C8EE/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+    ],
+    "opacity": 1.0,
+    "size": "4500px 2500px",
+    "position": "center",
+    "interval": 0
+  },
+  "workbench.colorTheme": "Lunar Pink",
+  "background.editor": {
+    
+    "useFront": true,
+    "style": {
+      "background-position": "100% 100%",
+      "background-size": "auto",
+      "opacity": 0.6
+    },
+    "styles": [
+      {},
+      {},
+      {}
+    ],
+    "images": [],
+    "interval": 0,
+    "random": false
+  }
+}
