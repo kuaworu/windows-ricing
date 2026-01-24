@@ -1,3 +1,5 @@
+#конфиг взяла из glazewm, я только ннемного изменила визуальность и конфигурацию
+
 general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
@@ -171,6 +173,21 @@ binding_modes:
         bindings: ['escape', 'enter']
 
 keybindings:
+#запуск программ с помощью комбинации клавиш
+  - commands: ['shell-exec %SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo']
+    bindings: ['alt+shift+z']
+
+  - commands: ['shell-exec %SystemRoot%\\System32\\cmd.exe']
+    bindings: ['alt+shift+c']
+
+  - commands: ['shell-exec C:\\software\\programming\\Microsoft VS Code\\Code.exe']
+    bindings: ['alt+shift+v']
+
+  - command: ['shell-exec C:\Program Files\Cisco Packet Tracer 9.0.0\bin\PacketTracer.exe'] #решить проблему с циско. не запускается
+    bindings: ['alt+shift+b']
+
+
+
   # Shift focus in a given direction.
   - commands: ['focus --direction left']
     bindings: ['alt+h', 'alt+left']
