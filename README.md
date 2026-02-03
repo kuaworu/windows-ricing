@@ -1,12 +1,19 @@
 # windows-ricing
-### windows ricing - кастомизация внешнего вида и поведения windows, приблизительнее к linux.
+### windows ricing - customization of windows appearance and behavior, closer to linux.
 
-### цель проекта
-сделать кастомизацию windows похожим на linux, обеспечив удобное управление окнами и автозапуском приложений.
+### project goal
+make windows customization similar to linux, providing convenient window management and application autostart.
 
 ---
 
-# предварительный просмотр
+### versions of readme in other languages:
+- [english](README.md)
+- [русский](README.ru.md)
+- [eesti](README.et.md)
+
+---
+
+# preview
 
 ![l](images/img1.jpg)
 ![o](images/img2.jpg)
@@ -16,60 +23,61 @@
 
 ## 1. glazewm
 
-#### glazewm - это окнный менеджер для windows. он автоматически распологает окна исходя из кода.
+#### glazewm is a window manager for windows. it automatically arranges windows based on code.
 
-в этом проекте использнуется конфиг из оригинального репозитория glazewm с небольшими изменениями, а именно изменения цвета рамки на розовую, неактивные окна становятся прозрачнее, добавленны новые горячие клавиши. 
+this project uses a config from the original glazewm repository with minor changes, namely changing the border color to pink, making inactive windows more transparent, and adding new hotkeys.
 
 ---
 
-#### установка glazewm
+#### installing glazewm
 
-перейдите в этот репозиторий:
+go to this repository:
 https://github.com/glzr-io/glazewm
 
-справа нажмите releases и скачайте подходящую версию.
+click releases on the right and download the appropriate version.
 
-я использовала: v3.9.1 Standalone Installer (x64)
+i used: v3.9.1 Standalone Installer (x64)
 
-также для работы нужен zebar: 
+zebar is also required for work:
 https://github.com/glzr-io/zebar
 
-я использовала: v3.2.0 Installer (Windows x64)
+i used: v3.2.0 Installer (Windows x64)
 
 ---
 
-### изменение интерфейса
+### interface changes
 
-1. запустите zebar от имени адиминстратора.
-2. запустите glazewm от имени администратора.
-3. glazewm должен появиться в системном трее
-если же он там не появился, зайдите в настройки вашего компьютера - персонализация - панель задач, найдите другие значки панели задач и включите glazewm.
-4. в системном трее нажмите правой кнопкой мыши на glazewm, затем show config folder.
-5. скопируйте код с моего glazewm/config.yaml и замените его в вашем конфиге, который автоматически скачался с glazewm.
-6. сохраните и затем нажмите сочетание клавиш alt+shift+r - изменения должны примениться автоматически.
+1. run zebar as administrator.
+2. run glazewm as administrator.
+3. glazewm should appear in the system tray.
+if it doesn't appear there, go to your computer settings - personalization - taskbar, find "other taskbar icons" and turn on glazewm.
+4. right-click on glazewm in the system tray, then "show config folder".
+5. copy the code from my glazewm/config.yaml and replace it in your config, which was automatically downloaded with glazewm.
+6. save and then press alt+shift+r - changes should apply automatically.
 
 ---
 
-## 2. автозапуск при включении пк
+## 2. autostart on pc startup
 
-если пропустить этот пункт, после перезагрузки, glazewm не будет работать, пока вы его снова не запустите от имени администратора. чтобы каждый раз после запуска пк не повторть одно и то же действие, выполните следующее:
+if you skip this step, glazewm won't work after a reboot until you run it as administrator again. to avoid repeating the same action every time the pc starts, do the following:
 
-установите python: https://www.python.org/downloads/
+install python: https://www.python.org/downloads/
 
-сохраните мой код autostart.py, после откройте cmd от имени администратора и введите комманду:
+save my autostart.py code, then open cmd as administrator and enter the command:
 
 ```
 schtasks /create /tn "autostart_glazewm" /tr "C:\Program Files\glzr.io\GlazeWM\glazewm.exe" /sc onlogon /rl highest /f
+
 ```
 
-мы запускаем через cmd, чтобы код выполнялся с наивысшими правами, если запустить код через, например, visual studio, он не сработает.
+we run it through cmd so the code executes with highest privileges; if you run the code through, for example, visual studio, it won't work.
 
-зайдите в планировщик задач и найдите задачу autostart_glazewm, если вы её видите, значит всё сделано правильно и работает.
+go to task scheduler and find the autostart_glazewm task; if you see it, then everything is done correctly and working.
 
 ---
 
-### если что-то не работает, возможные проблемы:
+### if something is not working, possible problems:
 
-1. не тот путь к glazewm в комманде для cmd и autostart.py. проверьте, по какому пути у вас скачана программа glazewm.exe, и если путь отличается от моего, измените его во второй строке моего кода и затем в комманде для cmd.
-2. антивирус блокирует автозапуск. на время отлючите антивирус.
-3. у вас не запущен python. запустите файл python и на все копросы в консоли ответьте y. если возникают проблемы с установкой python, найдите любой туториал на ютубе и установите python по их инструкции.
+1. wrong path to glazewm in the cmd command and autostart.py. check the path where your glazewm.exe is downloaded, and if the path differs from mine, change it in the second line of my code and then in the cmd command.
+2. antivirus is blocking autostart. disable antivirus temporarily.
+3. python is not running. run the python file and answer y to all questions in the console. if you have problems installing python, find any tutorial on youtube and install python according to their instructions.
