@@ -25,7 +25,7 @@ make windows customization similar to linux, providing convenient window managem
 
 #### glazewm is a window manager for windows. it automatically arranges windows based on code.
 
-this project uses a config from the original glazewm repository with minor changes, namely changing the border color to pink, making inactive windows more transparent, and adding new hotkeys.
+this project uses a config from the original glazewm repository with minor changes.
 
 ---
 
