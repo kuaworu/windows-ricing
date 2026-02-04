@@ -1,5 +1,4 @@
 #конфиг взяла из glazewm, я только ннемного изменила визуальность и конфигурацию
-
 general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
@@ -10,36 +9,19 @@ general:
   # Example: The below command kills Zebar.
   shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F']
 
-  # Commands to run after the WM config is reloaded.
-  config_reload_commands: []
-
-  # Whether to automatically focus windows underneath the cursor.
-  focus_follows_cursor: false
-
-  # Whether to switch back and forth between the previously focused
-  # workspace when focusing the current workspace.
-  toggle_workspace_on_refocus: false
+  #автофокус как в убунту
+  focus_follows_cursor: true
+  toggle_workspace_on_refocus: true
 
   cursor_jump:
-    # Whether to automatically move the cursor on the specified trigger.
     enabled: true
-
-    # Trigger for cursor jump:
-    # - 'monitor_focus': Jump when focus changes between monitors.
-    # - 'window_focus': Jump when focus changes between windows.
     trigger: 'monitor_focus'
 
-  # How windows should be hidden when switching workspaces.
-  # - 'cloak': Recommended. Hides windows with no animation.
-  # - 'hide': Legacy method (v3.5 and earlier) that has a brief animation,
-  # but has stability issues with some apps.
   hide_method: 'cloak'
-
-  # Affects which windows get shown in the native Windows taskbar. Has no
-  # effect if `hide_method: 'hide'`.
-  # - 'true': Show all windows (regardless of workspace).
-  # - 'false': Only show windows from the currently shown workspaces.
   show_all_in_taskbar: false
+
+  # Commands to run after the WM config is reloaded.
+  config_reload_commands: []
 
 gaps:
   # Whether to scale the gaps with the DPI of the monitor.
@@ -173,20 +155,38 @@ binding_modes:
         bindings: ['escape', 'enter']
 
 keybindings:
-#запуск программ с помощью комбинации клавиш
-  - commands: ['shell-exec %SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo']
+  #запуск программ с помощью комбинации клавиш
+  - commands: ['shell-exec C:\\software\\programming\\Microsoft VS Code\\Code.exe']
     bindings: ['alt+shift+z']
 
-  - commands: ['shell-exec %SystemRoot%\\System32\\cmd.exe']
+  - commands:
+      - shell-exec powershell
+    bindings: ['alt+shift+x']
+
+  - commands:
+      - shell-exec cmd
     bindings: ['alt+shift+c']
 
-  - commands: ['shell-exec C:\\software\\programming\\Microsoft VS Code\\Code.exe']
+  - commands: ['shell-exec C:\\autohotkey\\autologincisco.ahk']
     bindings: ['alt+shift+v']
 
-  - command: ['shell-exec C:\Program Files\Cisco Packet Tracer 9.0.0\bin\PacketTracer.exe'] #решить проблему с циско. не запускается
+  - commands: ['shell-exec explorer']
     bindings: ['alt+shift+b']
 
+  - commands: ['shell-exec C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe']
+    bindings: ['alt+shift+n']
 
+  - commands: ['shell-exec C:\\software\\messengers\\Telegram Desktop\\Telegram.exe']
+    bindings: ['alt+shift+m']
+
+  #повершелл и цмд от имени администратора
+  - commands:
+      - shell-exec powershell -Command "Start-Process powershell -Verb RunAs"
+    bindings: ['alt+shift+d']
+
+  - commands:
+      - shell-exec powershell -Command "Start-Process cmd -Verb RunAs"
+    bindings: ['alt+shift+f']
 
   # Shift focus in a given direction.
   - commands: ['focus --direction left']
