@@ -25,7 +25,7 @@ Muuta Windowsi kohandamine sarnaseks Linuxiga, tagades mugava akende haldamise j
 
 #### glazewm on aknahaldur Windowsi jaoks. See paigutab aknad automaatselt koodi põhjal.
 
-Selles projektis on kasutatud originaalse glazewm repositooriumi konfigu väikeste muudatustega: raami värv on muudetud roosaks, mitteaktiivsed aknad on läbipaistvamad ja lisatud on uued kiirklahvid. 
+Selles projektis on kasutatud originaalse glazewm repositooriumi konfigu väikeste muudatustega.
 
 ---
 
