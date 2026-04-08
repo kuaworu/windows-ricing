@@ -1,0 +1,52 @@
+скачать windhawk и следующие модификации с настройками:
+
+1. Windows 11 Taskbar Styler
+theme: Surface
+styleConstants:
+  - ''
+controlStyles:
+  - target: ''
+    styles:
+      - ''
+themeResourceVariables:
+  - ''
+xamlDiagnosticsHandling: alert
+
+2. Windows 11 Start Menu Styler
+theme: TranslucentStartMenu
+disableNewStartMenuLayout: ''
+styleConstants:
+  - ''
+controlStyles:
+  - target: ''
+    styles:
+      - ''
+themeResourceVariables:
+  - ''
+webContentStyles:
+  - target: ''
+    styles:
+      - ''
+webContentCustomJs: ''
+
+
+3. Taskbar height and icon size
+TaskbarHeight: 65
+IconSize: 23
+TaskbarButtonWidth: 47
+IconSizeSmall: 16
+TaskbarButtonWidthSmall: 32
+
+4. Taskbar Dock Animation
+AnimationType: 0
+MaxScale: 130
+EffectRadius: 100
+SpacingFactor: 50
+BounceDelay: 500
+FocusDuration: 150
+MirrorForTopTaskbar: 0
+DisableVerticalBounce: 0
+TaskbarLabelsMode: 0
+ExcludeSystemButtonsMode: 0
+LerpSpeed: 60
+DisableBounce: 1
