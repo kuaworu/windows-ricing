@@ -1,3 +1,5 @@
+#конфиг взяла из glazewm, я только немного изменила визуальность и конфигурацию
+
 general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
@@ -9,7 +11,7 @@ general:
   shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F']
 
 
-  #автофокус
+  #автофокус как в убунту
   focus_follows_cursor: true
   toggle_workspace_on_refocus: true
 
@@ -182,7 +184,7 @@ keybindings:
   - commands: ['shell-exec explorer']
     bindings: ['alt+shift+b']
 
-  - commands: ['shell-exec C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe']
+  - commands: ['shell-exec C:\\Program Files\\Zen Browser\\zen.exe']
     bindings: ['alt+shift+n']
 
   - commands: ['shell-exec C:\\software\\messengers\\Telegram Desktop\\Telegram.exe']

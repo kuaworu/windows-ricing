@@ -182,11 +182,15 @@ keybindings:
   - commands: ['shell-exec explorer']
     bindings: ['alt+shift+b']
 
-  - commands: ['shell-exec C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe']
+  - commands: 
+      - shell-exec "C:\Program Files\Zen Browser\zen.exe"
     bindings: ['alt+shift+n']
 
   - commands: ['shell-exec C:\\software\\messengers\\Telegram Desktop\\Telegram.exe']
     bindings: ['alt+shift+m']
+
+   - commands: ['wm-reload-config']
+    bindings: ['alt+shift+r']
 
   #повершелл и цмд от имени администратора
   - commands:
