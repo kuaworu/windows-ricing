@@ -8,11 +8,19 @@ make windows customization similar to linux, providing convenient window managem
 
 # preview
 
-<img width="1080" height="675" alt="изображение" src="https://github.com/user-attachments/assets/8cd576b0-30f2-4102-b430-6ac362648948" />
-<img width="1080" height="675" alt="изображение" src="https://github.com/user-attachments/assets/ebe323af-22d5-4fa6-8b45-32f8d3e4f99a" />
-<img width="1080" height="675" alt="изображение" src="https://github.com/user-attachments/assets/73941d18-0e5c-47c2-9095-3f13befc162d" />
-<img width="1080" height="674" alt="изображение" src="https://github.com/user-attachments/assets/0373aa39-e465-4c1d-8667-908ed3601493" />
-<img width="1080" height="675" alt="изображение" src="https://github.com/user-attachments/assets/ec464a5e-50cf-4e92-a3d8-9c1059c5f954" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/8cd576b0-30f2-4102-b430-6ac362648948" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/ebe323af-22d5-4fa6-8b45-32f8d3e4f99a" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/73941d18-0e5c-47c2-9095-3f13befc162d" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/0373aa39-e465-4c1d-8667-908ed3601493" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/ec464a5e-50cf-4e92-a3d8-9c1059c5f954" />
+
+---
+
+# table of contents
+
+- [1. glazewm](#1-glazewm)
+- [2. autostart on pc startup](#2-autostart-on-pc-startup)
+- [3. taskbar](#3-taskbar)
 
 ---
 
@@ -27,14 +35,14 @@ this project uses a config from the original glazewm repository with minor chang
 #### installing glazewm
 
 go to this repository:
-https://github.com/glzr-io/glazewm
+[glazewm](https://github.com/glzr-io/glazewm)
 
 click releases on the right and download the appropriate version.
 
 i used: v3.9.1 Standalone Installer (x64)
 
 zebar is also required for work:
-https://github.com/glzr-io/zebar
+[zebar](https://github.com/glzr-io/zebar)
 
 i used: v3.2.0 Installer (Windows x64)
 
@@ -47,8 +55,8 @@ i used: v3.2.0 Installer (Windows x64)
 3. glazewm should appear in the system tray.
 if it doesn't appear there, go to your computer settings - personalization - taskbar, find "other taskbar icons" and turn on glazewm.
 4. right-click on glazewm in the system tray, then "show config folder".
-5. copy the code from my glazewm/config.yaml and replace it in your config, which was automatically downloaded with glazewm.
-6. save and then press alt+shift+r - changes should apply automatically.
+5. copy the code from my `glazewm/config.yaml` and replace it in your config, which was automatically downloaded with glazewm.
+6. save and then press `alt+shift+r` - changes should apply automatically.
 
 ---
 
@@ -56,7 +64,7 @@ if it doesn't appear there, go to your computer settings - personalization - tas
 
 if you skip this step, glazewm won't work after a reboot until you run it as administrator again. to avoid repeating the same action every time the pc starts, do the following:
 
-install python: https://www.python.org/downloads/
+install python: [python](https://www.python.org/downloads/)
 
 save my autostart.py code, then open cmd as administrator and enter the command:
 
@@ -71,8 +79,14 @@ go to task scheduler and find the autostart_glazewm task; if you see it, then ev
 
 ---
 
-### if something is not working, possible problems:
+## 3. taskbar
 
-1. wrong path to glazewm in the cmd command and autostart.py. check the path where your glazewm.exe is downloaded, and if the path differs from mine, change it in the second line of my code and then in the cmd command.
-2. antivirus is blocking autostart. disable antivirus temporarily.
-3. python is not running. run the python file and answer y to all questions in the console. if you have problems installing python, find any tutorial on youtube and install python according to their instructions.
+you need to download windhawk: [windhawk](https://windhawk.net/)
+
+in the program, you need to enable the following modifications
+
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/e9917aac-130c-4067-807f-05a57b24d660" />
+
+the configuration for each modification can be found in my repository at `windhawk/taskbar.txt`
+
+not all modifications may work immediately for you. you might need to restart your pc.
