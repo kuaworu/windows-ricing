@@ -32,7 +32,7 @@ this project uses a config from the original glazewm repository with minor chang
 
 ---
 
-#### installing glazewm
+### installing glazewm
 
 go to this repository:
 [glazewm](https://github.com/glzr-io/glazewm)
