@@ -6,19 +6,13 @@ make windows customization similar to linux, providing convenient window managem
 
 ---
 
-### versions of readme in other languages:
-- [english](readme.md)
-- [русский](readme.ru.md)
-- [eesti](readme.et.md)
-
----
-
 # preview
 
-![l](images/img1.jpg)
-![o](images/img2.jpg)
-![l](images/img3.jpg)
-![l](images/img4.jpg)
+<img width="1080" height="675" alt="изображение" src="https://github.com/user-attachments/assets/8cd576b0-30f2-4102-b430-6ac362648948" />
+<img width="1080" height="675" alt="изображение" src="https://github.com/user-attachments/assets/ebe323af-22d5-4fa6-8b45-32f8d3e4f99a" />
+<img width="1080" height="675" alt="изображение" src="https://github.com/user-attachments/assets/73941d18-0e5c-47c2-9095-3f13befc162d" />
+<img width="1080" height="674" alt="изображение" src="https://github.com/user-attachments/assets/0373aa39-e465-4c1d-8667-908ed3601493" />
+<img width="1080" height="675" alt="изображение" src="https://github.com/user-attachments/assets/ec464a5e-50cf-4e92-a3d8-9c1059c5f954" />
 
 ---
 
