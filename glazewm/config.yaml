@@ -1,3 +1,5 @@
+#конфиг взяла из glazewm, я только ннемного изменила визуальность и конфигурацию
+
 general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
@@ -165,41 +167,29 @@ binding_modes:
 
 keybindings:
   #запуск программ с помощью комбинации клавиш
-  - commands: ['shell-exec C:\\software\\programming\\Microsoft VS Code\\Code.exe']
+  - commands:
+      - shell-exec powershell
     bindings: ['alt+shift+z']
 
   - commands:
-      - shell-exec powershell
-    bindings: ['alt+shift+x']
-
-  - commands:
       - shell-exec cmd
+    bindings: ['alt+shift+x']
+    
+  - commands: ['shell-exec explorer']
     bindings: ['alt+shift+c']
 
-  - commands: ['shell-exec C:\\autohotkey\\autologincisco.ahk']
+  - commands: ['shell-exec C:\\software\\programming\\Microsoft VS Code\\Code.exe']
     bindings: ['alt+shift+v']
 
-  - commands: ['shell-exec explorer']
+  - commands: ['shell-exec C:\\Program Files\\Zen Browser\\zen.exe']
     bindings: ['alt+shift+b']
 
-  - commands: 
-      - shell-exec "C:\Program Files\Zen Browser\zen.exe"
+  - commands: ['shell-exec C:\\software\\messengers\\Telegram Desktop\\Telegram.exe']
     bindings: ['alt+shift+n']
 
-  - commands: ['shell-exec C:\\software\\messengers\\Telegram Desktop\\Telegram.exe']
-    bindings: ['alt+shift+m']
-
-   - commands: ['wm-reload-config']
-    bindings: ['alt+shift+r']
-
-  #повершелл и цмд от имени администратора
-  - commands:
-      - shell-exec powershell -Command "Start-Process powershell -Verb RunAs"
-    bindings: ['alt+shift+d']
-
-  - commands:
-      - shell-exec powershell -Command "Start-Process cmd -Verb RunAs"
-    bindings: ['alt+shift+f']
+  #закрытие активного окна с помощью комбинации клавиш
+  - commands: ['close']
+    bindings: ['ctrl+shift+z']
 
   # Shift focus in a given direction.
   - commands: ['focus --direction left']
@@ -266,10 +256,6 @@ keybindings:
   # Minimize focused window.
   - commands: ['toggle-minimized']
     bindings: ['alt+m']
-
-  # Close focused window.
-  - commands: ['close']
-    bindings: ['alt+shift+q']
 
   # Kill GlazeWM process safely.
   - commands: ['wm-exit']
