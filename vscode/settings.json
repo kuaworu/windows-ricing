@@ -1,18 +1,15 @@
-/*@ext:shalldie.background для работы кода нужно скачать это расширение. без него не будет работать. затем в его настройках json вставить этот код*/
-
 {
   "background.fullscreen": {
     "images": [
-      "https://github.com/SleepyCatHey/Ultimate-Win11-Setup/blob/main/Wallpapers/cat-vibin.png?raw=true"
+      "https://github.com/MrDLingters/Win11Catppuccin/blob/main/Wallpapers/wallhaven-ly298y-colorized.png?raw=true"
     ],
     "opacity": 1.0,
-    "size": "2500px 1500px",
+    "size": "cover",
     "position": "center",
     "interval": 0
   },
   "workbench.colorTheme": "Lunar Pink",
   "background.editor": {
-    
     "useFront": true,
     "style": {
       "background-position": "100% 100%",
@@ -29,15 +26,12 @@
     "random": false
   },
   "background.auxiliarybar": {
-    
-
-    
-
     "images": [],
     "opacity": 0.1,
     "size": "cover",
     "position": "center",
     "interval": 0,
     "random": false
-  }
+  },
+  "editor.largeFileOptimizations": false
 }

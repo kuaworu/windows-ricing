@@ -12,7 +12,8 @@ make windows customization similar to linux, providing convenient window managem
 <img width="600" alt="изображение" src="https://github.com/user-attachments/assets/ebe323af-22d5-4fa6-8b45-32f8d3e4f99a" />
 <img width="600" alt="изображение" src="https://github.com/user-attachments/assets/73941d18-0e5c-47c2-9095-3f13befc162d" />
 <img width="600" alt="изображение" src="https://github.com/user-attachments/assets/0373aa39-e465-4c1d-8667-908ed3601493" />
-<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/ec464a5e-50cf-4e92-a3d8-9c1059c5f954" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/3f213c80-8e13-45c2-8bd5-1838a9729c58" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/f5507665-76e1-46de-a54c-76f24b3fd842" />
 
 ---
 
