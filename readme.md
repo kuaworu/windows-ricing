@@ -33,7 +33,7 @@ this project uses a config from the original glazewm repository with minor chang
 
 ---
 
-### installing glazewm
+### installing
 
 go to this repository:
 [glazewm](https://github.com/glzr-io/glazewm)
@@ -47,17 +47,25 @@ zebar is also required for work:
 
 i used: v3.2.0 Installer (Windows x64)
 
+yasb is also required for work:
+[yasb](https://github.com/amnweb/yasb)
+
+i used: yasb-2.0.5-x64.msi
+
+yasb and zebar are utilities for taskbar customization, like the top taskbar in my screenshots for example. take your pick, i personally went with yasb.
+
 ---
 
 ### interface changes
 
-1. run zebar as administrator.
+1. run zebar or yasb as administrator.
 2. run glazewm as administrator.
 3. glazewm should appear in the system tray.
 if it doesn't appear there, go to your computer settings - personalization - taskbar, find "other taskbar icons" and turn on glazewm.
 4. right-click on glazewm in the system tray, then "show config folder".
 5. copy the code from my `glazewm/config.yaml` and replace it in your config, which was automatically downloaded with glazewm.
 6. save and then press `alt+shift+r` - changes should apply automatically.
+7. also copy `yasb/config.yaml` and `yasb/styles.css` from my project into your yasb config and styles. if you are using zebar, i don't have the taskbar code that fits your setup, but you can find something similar on github or run any config that the app itself offers you.
 
 ---
 
@@ -80,7 +88,7 @@ go to task scheduler and find the autostart_glazewm task; if you see it, then ev
 
 ---
 
-## 3. taskbar
+## 3. windows taskbar
 
 you need to download windhawk: [windhawk](https://windhawk.net/)
 
