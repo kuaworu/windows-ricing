@@ -8,12 +8,13 @@ make windows customization similar to linux, providing convenient window managem
 
 # preview
 
-<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/8cd576b0-30f2-4102-b430-6ac362648948" />
-<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/ebe323af-22d5-4fa6-8b45-32f8d3e4f99a" />
-<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/73941d18-0e5c-47c2-9095-3f13befc162d" />
-<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/0373aa39-e465-4c1d-8667-908ed3601493" />
-<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/3f213c80-8e13-45c2-8bd5-1838a9729c58" />
-<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/f5507665-76e1-46de-a54c-76f24b3fd842" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/4ea136a4-393b-483a-ac2c-a1cedf6df153" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/a896fac9-fc94-4718-aad2-a1ee94397e74" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/5b217dc3-f1ee-4e7e-a342-c985d27ad0cf" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/cc375360-8069-4197-8369-aeb0f6190e3a" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/8894a473-9168-405a-80f5-fb1d1ca2a469" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/d4396a08-9a37-4870-b5ea-3e6aecba6432" />
+<img width="600" alt="изображение" src="https://github.com/user-attachments/assets/a5b2e5fa-8c96-4e81-93fd-43d329db524f" />
 
 ---
 
@@ -88,7 +89,7 @@ go to task scheduler and find the autostart_glazewm task; if you see it, then ev
 
 ---
 
-## 3. windows taskbar
+## 3. taskbar
 
 you need to download windhawk: [windhawk](https://windhawk.net/)
 
